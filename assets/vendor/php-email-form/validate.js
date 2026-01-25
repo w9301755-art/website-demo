@@ -64,6 +64,18 @@
     })
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
+      // Handle both PHP response (OK) and Formspree response (JSON)
+      try {
+        let jsonData = JSON.parse(data);
+        if (jsonData.ok === true) {
+          thisForm.querySelector('.sent-message').classList.add('d-block');
+          thisForm.reset();
+          return;
+        }
+      } catch(e) {
+        // Not JSON, continue with text check
+      }
+      
       if (data.trim() == 'OK') {
         thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset(); 
