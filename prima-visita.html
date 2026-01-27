@@ -89,8 +89,40 @@
 
             <div class="service-content">
 
-              <div class="service-hero" data-aos="fade-up" data-aos-delay="200">
-                <img src="assets/img/services/services-1.webp" alt="Digital Marketing Strategy" class="img-fluid service-image">
+              <div class="project-showcase mb-5" data-aos="fade-up" data-aos-delay="200">
+                <div class="showcase-slider swiper init-swiper">
+                  <script type="application/json" class="swiper-config">
+                    {
+                      "loop": true,
+                      "speed": 800,
+                      "autoplay": {
+                        "delay": 5000
+                      },
+                      "effect": "fade",
+                      "fadeEffect": {
+                        "crossFade": true
+                      },
+                      "slidesPerView": 1,
+                      "pagination": {
+                        "el": ".swiper-pagination",
+                        "type": "bullets",
+                        "clickable": true
+                      }
+                    }
+                  </script>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="assets/img/services/carosello-prima-visita/nutrizionista_slide_uniform_1.png" alt="Showcase" class="img-fluid" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/services/carosello-prima-visita/prima-visita-2.png" alt="Showcase" class="img-fluid" loading="lazy">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="assets/img/services/carosello-prima-visita/prima-visita-3.png" alt="Showcase" class="img-fluid" loading="lazy">
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
               </div>
 
               <div class="service-description" data-aos="fade-up" data-aos-delay="300">
@@ -214,10 +246,28 @@
 
         </div>
 
+        <div class="project-navigation" data-aos="fade-up" data-aos-delay="200">
+          <div class="nav-container">
+            <a href="consulenza-nutrizionale.html" class="nav-item prev">
+              <span class="nav-label">Servizio Precedente</span>
+              <span class="nav-title">Consulenza Nutrizionale</span>
+            </a>
+            <a href="index.html#services" class="nav-item center">
+              <i class="bi bi-grid"></i>
+              <span>Vedi Tutti i Servizi</span>
+            </a>
+            <a href="piani-nutrizionali-personalizzati.html" class="nav-item next">
+              <span class="nav-label">Servizio Successivo</span>
+              <span class="nav-title">Piani Personalizzati</span>
+            </a>
+          </div>
+        </div>
+
       </div>
 
     </section><!-- /Service Details Section -->
 
+    
   </main>
 
   <footer id="footer" class="footer" style="background-color:  #99B898;">
@@ -240,6 +290,8 @@
             <li><a href="/index.html">Home</a></li>
             <li><a href="/index.html#about">About me</a></li>
             <li><a href="/index.html#services">Servizi</a></li>
+            <li><a href="/index.html#portfolio">Piani</a></li>
+            <li><a href="/index.html#contact">Contatti</a></li>
           </ul>
         </div>
 
@@ -254,11 +306,12 @@
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Vieni a trovarmi</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
-          <p>United States</p>
+          <p>Via Rosolino Pilo 39, Torino</p>
+          <p>Via Cesana 75B, Torino</p>
+          <p>Via Paestum 37, Ragusa</p>
           <p class="mt-4"><strong>Phone:</strong> <span>+39 366 396 1623</span></p>
           <p><strong>Email:</strong> <span>nutrizionistacilia@gmail.com</span></p>
+          <p><strong>PEC:</strong> <span>claudia.cilia@pecordinebiologi.it</span></p>
         </div>
 
       </div>
